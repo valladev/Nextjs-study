@@ -5,7 +5,7 @@ const font = {
    color: "#fff",
 }
 
-export default function rotas() {
+export default function Rotas() {
 
    function navegacaoSimples(url) {
       router.push(url)      
@@ -25,15 +25,15 @@ export default function rotas() {
       <div>
          <h1>Rotas Index</h1>
          <ul >
-            <Link href={"/routes/params?id=19&nome=Joao"}>
+            <Link href="/routes/params?id=19&nome=Joao" passHref>
                <li style={font}>Params</li>
             </Link>
 
-            <Link href={"/routes/123/buscar"}>
+            <Link href="/routes/123/buscar" passHref>
                <li style={font}>Buscar</li>
             </Link>
 
-            <Link href={"/routes/123/joao"}>
+            <Link href="/routes/123/joao" passHref>
                <li style={font}>Nome</li>
             </Link>
          </ul>
